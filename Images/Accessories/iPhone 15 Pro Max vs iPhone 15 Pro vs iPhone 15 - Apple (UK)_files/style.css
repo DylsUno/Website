@@ -1,0 +1,44 @@
+/*------------------------------------*\
+   LOCAL SCREENS
+\*------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------*\
+   END LOCAL SCREENS
+\*------------------------------------*/ 
+
+
+
+
+/*------------------------------------*\
+   LOCAL FIXES
+\*------------------------------------*/
+
+.ribbon .pricing-container a[href="#footnote-diamond-2"] {
+    display:none
+}
+
+.ribbon .pricing-container:not([style*='display']) a[href="#footnote-diamond-2"]  {
+    display:inline
+}
+
+.ribbon .pricing-fallback {
+	display: none
+}
+
+.ribbon .pricing-container[style="display: none;"] + .pricing-fallback {
+	display:inline
+}
+
+body:has(.pricing-container[style="display: none;"]) #ac-globalfooter .ac-gf-sosumi #footnote-diamond-2 {
+	display: none;
+}
+
+
+/*------------------------------------*\
+   END LOCAL FIXES
+\*------------------------------------*/ 

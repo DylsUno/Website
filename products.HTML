@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MobileWorld Station - Products</title>
+
+<style>
+/* GENERAL STYLES */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f7;
+}
+
+/* NAVBAR */
+header {
+  background: black;
+  color: white;
+  padding: 15px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+/* PAGE TITLE */
+.page-title {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.page-title h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* PRODUCTS SECTION */
+.products {
+  padding: 50px;
+}
+
+/* GRID (same structure as reviews) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 12px 0 6px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
+
+.price {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* BUTTON */
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2>MobileWorld Station</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="accessories.html">Accessories</a></li>
+      <li><a href="new-releases.html">New Releases</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Banner -->
+<div class="banner"></div>
+
+<!-- Page Title -->
+<section class="page-title">
+  <h1>Products</h1>
+  <p>Explore our latest Apple devices</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="Images/Phones/iphone 15.png" alt="iPhone 15">
+      <div class="product-name">iPhone 15</div>
+      <p class="description">Powerful everyday smartphone with great camera and performance.</p>
+      <div class="price">£799</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/Phones/iphone 15 pro.png" alt="iPhone 15 Pro">
+      <div class="product-name">iphone 15 pro</div>
+      <p class="description">Premium titanium design with advanced performance.</p>
+      <div class="price">£999</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/Phones/iphone_resized_446x297.jpg" alt="iPhone 15 Pro Max">
+      <div class="product-name">iPhone 15 Pro Max</div>
+      <p class="description">Best iPhone ever with top camera system and battery life.</p>
+      <div class="price">£1199</div>
+      <button>Buy Now</button>
+	</div>
+	  
+
+	<div class="product-card">
+  		<img src="Images/Phones/iphone 17.jpg" alt="iPhone 17">
+ 		<div class="product-name">iPhone 17</div>
+  		<p class="description">Next-generation iPhone with improved performance and battery life.</p>
+  			<div class="price">£899</div>
+ 		 <button>Buy Now</button>
+	</div>
+	  
+    <div class="product-card">
+      <img src="Images/Accessories/airpods-max-select-202409-orange_FV1.jpg" alt="AirPods Max Orange">
+      <div class="product-name">AirPods Max - Orange</div>
+      <p class="description">Premium sound with noise cancellation.</p>
+      <div class="price">£549</div>
+      <button>Buy Now</button>
+    </div>
+	  
+    <div class="product-card">
+      <img src="Images/Accessories/airpods-max-select-202409-midnight_FV1.jpg" alt="AirPods Max Midnight headphones">
+      <div class="product-name">AirPods Max - Midnight</div>
+      <p class="description">High-fidelity audio and comfort design.</p>
+      <div class="price">£549</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <a href="Images/Accessories/airpods-max-select-202409-purple_FV1.jpg">
+  <img src="Images/Accessories/airpods-max-select-202409-purple_FV1.jpg" alt="AirPods Max - Purple"></a>
+<div class="product-name">AirPods Max - Purple</div>
+      <p class="description">Stylish design with powerful sound.</p>
+      <div class="price">£549</div>
+      <button>Buy Now</button>
+    </div>
+	  
+<div class="product-card">
+  <img src="Images/Accessories/da61b25fb7a382ec80731eef8cbd3f86.jpg" alt="Apple accessory product image">
+  <div class="product-name">Apple USB‑C Charger</div>
+  <p class="description">Fast charging USB‑C power adapter for iPhone and accessories.</p>
+  <div class="price">£29</div>
+  <button>Buy Now</button>
+</div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 MobileWorld Station. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MobileWorld Station - Plans</title>
+
+<style>
+/* GENERAL STYLES */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f7;
+}
+
+/* NAVBAR */
+header {
+  background: black;
+  color: white;
+  padding: 15px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+/* PAGE TITLE */
+.page-title {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.page-title h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* PLANS */
+.plans {
+  padding: 50px;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* PLAN CARD */
+.plan-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.plan-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #111;
+}
+
+.plan-features {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2>MobileWorld Station</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="accessories.html">Accessories</a></li>
+      <li><a href="new-releases.html">New Releases</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Banner -->
+<div class="banner"></div>
+
+<!-- Page Title -->
+<section class="page-title">
+  <h1>Mobile Plans</h1>
+  <p>Choose the perfect plan for your needs</p>
+</section>
+
+<!-- PLANS -->
+<section class="plans">
+  <div class="plan-grid">
+
+    <div class="plan-card">
+      <div class="plan-title">Basic Plan</div>
+      <div class="plan-price">£10/month</div>
+      <div class="plan-features">
+        5GB Data<br>
+        100 Minutes<br>
+        Unlimited Texts<br>
+        Basic Support
+      </div>
+      <button>Choose Plan</button>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-title">Standard Plan</div>
+      <div class="plan-price">£20/month</div>
+      <div class="plan-features">
+        20GB Data<br>
+        Unlimited Minutes<br>
+        Unlimited Texts<br>
+        Priority Support
+      </div>
+      <button>Choose Plan</button>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-title">Unlimited Plan</div>
+      <div class="plan-price">£35/month</div>
+      <div class="plan-features">
+        Unlimited Data<br>
+        Unlimited Calls<br>
+        Unlimited Texts<br>
+        Premium Support
+      </div>
+      <button>Choose Plan</button>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-title">Family Plan</div>
+      <div class="plan-price">£60/month</div>
+      <div class="plan-features">
+        4 SIM Cards<br>
+        Shared Unlimited Data<br>
+        Unlimited Calls & Texts<br>
+        Family Support
+      </div>
+      <button>Choose Plan</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 MobileWorld Station. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

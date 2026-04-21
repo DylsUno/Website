@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MobileWorld Station - Home</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f7;
+}
+
+/* NAVBAR */
+header {
+  background: black;
+  color: white;
+  padding: 15px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: white;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  background: url('Images/Phones/iphone 17.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* PROMO */
+.promo {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.promo h2 {
+  font-size: 32px;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2>MobileWorld Station</h2>
+    <ul>
+      <li><a href="Index.HTML">Home</a></li>
+      <li><a href="accessoreis.HTML">Accessories</a></li>
+      <li><a href="new-releases.HTML">New Releases</a></li>
+      <li><a href="products.HTML">Products</a></li>
+      <li><a href="plans.HTML">Plans</a></li>
+      <li><a href="contact-us.HTML">Contact</a></li>
+      <li><a href="help.HTML">Help</a></li>
+      <li><a href="reviews.HTML">Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Welcome to MobileWorld Station</h1>
+  <p>Your destination for the latest iPhones and accessories</p>
+  <button onclick="location.href='new-releases.html'">Shop New Releases</button>
+</section>
+
+<!-- FEATURED PHONES -->
+<section class="section">
+  <h2>Featured iPhones</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="Images/Phones/iphone 17.jpg">
+      <h3>iPhone 17</h3>
+      <p>Next-gen power and performance.</p>
+      <button onclick="location.href='new-releases.html'">View</button>
+    </div>
+
+    <div class="card">
+      <img src="Images/Phones/iphone 15 pro.png">
+      <h3>iPhone 15 Pro</h3>
+      <p>Lightweight titanium design.</p>
+      <button onclick="location.href='new-releases.html'">View</button>
+    </div>
+
+    <div class="card">
+      <img src="Images/Phones/iphone_resized_446x297.jpg">
+      <h3>iPhone 15 Pro Max</h3>
+      <p>Best camera and battery life.</p>
+      <button onclick="location.href='new-releases.html'">View</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ACCESSORIES -->
+<section class="section">
+  <h2>Popular Accessories</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="Images/Accessories/airpods-max-select-202409-orange_FV1.jpg">
+      <h3>AirPods Max</h3>
+      <p>Premium sound experience.</p>
+      <button onclick="location.href='accessories.html'">Shop</button>
+    </div>
+
+    <div class="card">
+      <img src="Images/Accessories/da61b25fb7a382ec80731eef8cbd3f86.jpg">
+      <h3>USB-C Charger</h3>
+      <p>Fast and reliable charging.</p>
+      <button onclick="location.href='accessories.html'">Shop</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo">
+  <h2>Upgrade Today</h2>
+  <p>Trade in your old phone and save on your next iPhone</p>
+  <button onclick="location.href='plans.html'" style="margin-top:15px;">View Plans</button>
+</section>
+
+<footer>
+  <p>© 2026 MobileWorld Station. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
